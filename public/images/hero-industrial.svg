@@ -1,0 +1,41 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1080" fill="#08213D"/>
+  <rect y="520" width="1920" height="560" fill="#06172B"/>
+  <g opacity="0.5" stroke="#1686D9" stroke-width="2">
+    <path d="M0 720L250 630L520 750L760 580L1040 700L1320 540L1600 650L1920 480"/>
+    <path d="M120 980L360 760L640 920L890 760L1240 860L1530 680L1800 760"/>
+    <path d="M210 410L500 500L820 380L1130 520L1470 330L1810 480"/>
+  </g>
+  <g fill="#17A8F2">
+    <circle cx="250" cy="630" r="8"/><circle cx="520" cy="750" r="7"/><circle cx="760" cy="580" r="9"/>
+    <circle cx="1040" cy="700" r="8"/><circle cx="1320" cy="540" r="9"/><circle cx="1600" cy="650" r="7"/>
+    <circle cx="500" cy="500" r="7"/><circle cx="820" cy="380" r="8"/><circle cx="1470" cy="330" r="10"/>
+  </g>
+  <g opacity="0.16" fill="#39BDF8">
+    <circle cx="280" cy="260" r="10"/><circle cx="380" cy="220" r="7"/><circle cx="620" cy="180" r="8"/>
+    <circle cx="900" cy="250" r="9"/><circle cx="1420" cy="210" r="11"/><circle cx="1620" cy="270" r="8"/>
+  </g>
+  <g transform="translate(1010 230)">
+    <ellipse cx="360" cy="175" rx="75" ry="75" fill="#0B65A8" opacity="0.55"/>
+    <text x="324" y="195" font-family="Arial, sans-serif" font-size="58" font-weight="700" fill="#78D7FF">H₂</text>
+  </g>
+  <g transform="translate(1015 245)" stroke="#476C8C" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M150 88V40H305V92"/>
+    <path d="M305 92H435V155"/>
+    <path d="M270 115H370"/>
+  </g>
+  <g transform="translate(860 235)">
+    <rect x="95" y="220" width="210" height="425" rx="92" fill="#7E99B4"/>
+    <rect x="128" y="126" width="145" height="350" rx="72" fill="#8EA8C0"/>
+    <rect x="470" y="150" width="150" height="495" rx="75" fill="#7892AD"/>
+    <rect x="690" y="265" width="145" height="380" rx="70" fill="#86A1BC"/>
+    <rect x="0" y="420" width="230" height="225" rx="100" fill="#9CB3C7"/>
+    <g stroke="#546C82" stroke-width="5">
+      <path d="M112 250H288"/><path d="M500 270H590"/><path d="M720 382H815"/>
+      <path d="M22 550H213"/>
+    </g>
+    <g stroke="#C4D4E2" stroke-width="4" opacity="0.7">
+      <path d="M34 644L62 500L94 644L126 500L160 644L194 500L220 644"/>
+    </g>
+  </g>
+</svg>
