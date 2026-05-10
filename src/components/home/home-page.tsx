@@ -41,6 +41,7 @@ export function HomePage({
     <>
       <SiteHeader
         logo={logo}
+        companyName={footer.company.name}
         navItems={navigation}
         phone={company.phone}
         languages={languages}

@@ -12,7 +12,7 @@ export function SiteFooter({
   copyright,
   backToTopLabel,
 }: {
-  company: { logo: ImageAsset; description: string };
+  company: { name: string; logo: ImageAsset; description: string };
   columns: FooterColumn[];
   contactTitle: string;
   contacts: ContactItem[];
@@ -23,8 +23,11 @@ export function SiteFooter({
     <footer className="relative bg-[#061A31] text-slate-200">
       <div className="mx-auto grid w-full max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-2 lg:grid-cols-[1.2fr_0.7fr_0.9fr_1.1fr] lg:px-8">
         <div>
-          <a href="#home" className="relative block h-16 w-48" aria-label="返回首页">
-            <Image src={company.logo.src} alt={company.logo.alt} fill sizes="192px" className="object-contain brightness-125" />
+          <a href="#home" className="flex items-center gap-3" aria-label="返回首页">
+            <span className="relative block h-14 w-24">
+              <Image src={company.logo.src} alt={company.logo.alt} fill sizes="96px" className="object-contain brightness-125" />
+            </span>
+            <span className="max-w-[13rem] text-lg font-bold leading-tight text-white">{company.name}</span>
           </a>
           <p className="mt-5 max-w-sm text-sm leading-7 text-slate-300">{company.description}</p>
         </div>

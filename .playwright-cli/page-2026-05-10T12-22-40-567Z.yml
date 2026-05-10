@@ -1,0 +1,42 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - complementary "帐户奖励和偏好设置" [ref=e3]:
+      - link "登录 登录" [ref=e4] [cursor=pointer]:
+        - /url: javascript:void(0)
+        - generic [ref=e5]: 登录
+        - generic "登录" [ref=e6]
+      - button "设置和快速链接" [ref=e7] [cursor=pointer]
+  - generic [ref=e9]:
+    - banner [ref=e10]:
+      - link "Microsoft Bing" [ref=e12] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e14]:
+        - generic [ref=e16]:
+          - generic [ref=e17]:
+            - button "搜索必应地图" [ref=e18] [cursor=pointer]
+            - combobox "搜索必应地图" [ref=e21]: 南翔万商 芜湖
+          - status [ref=e22]
+        - link "打开方向视图" [ref=e25] [cursor=pointer]:
+          - /url: /maps/directions?style=r
+          - generic [ref=e27]: 路线
+    - main [ref=e28]:
+      - generic [ref=e29]:
+        - progressbar "Loading content" [ref=e34]:
+          - progressbar "Loading content" [ref=e35]
+          - progressbar "Loading content" [ref=e36]
+          - progressbar "Loading content" [ref=e37]
+          - progressbar "Loading content" [ref=e38]
+          - progressbar "Loading content" [ref=e39]
+          - progressbar "Loading content" [ref=e40]
+          - progressbar "Loading content" [ref=e41]
+        - button "展开/折叠卡片" [ref=e42] [cursor=pointer]
+        - region "Map" [ref=e49]
+  - contentinfo [ref=e50]:
+    - list [ref=e52]:
+      - listitem [ref=e53]:
+        - link "隐私" [ref=e54] [cursor=pointer]:
+          - /url: http://go.microsoft.com/fwlink/?LinkId=521839
+      - listitem [ref=e55]:
+        - link "条款" [ref=e56] [cursor=pointer]:
+          - /url: http://go.microsoft.com/fwlink/?LinkID=246338
+    - button "反馈" [ref=e58] [cursor=pointer]

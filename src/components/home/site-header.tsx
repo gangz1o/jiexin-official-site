@@ -5,11 +5,13 @@ import { Languages, Menu, Phone, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/button";
+import { PhoneCallLink } from "@/components/home/phone-call-link";
 import type { ImageAsset, LanguageOption, LocaleCode, NavItem } from "@/types/home";
 import { cn } from "@/lib/utils";
 
 export function SiteHeader({
   logo,
+  companyName,
   navItems,
   phone,
   languages,
@@ -17,6 +19,7 @@ export function SiteHeader({
   onLocaleChange,
 }: {
   logo: ImageAsset;
+  companyName: string;
   navItems: NavItem[];
   phone: string;
   languages: LanguageOption[];
@@ -43,11 +46,23 @@ export function SiteHeader({
       )}
     >
       <div className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <a href="#home" className="relative h-14 w-40 shrink-0 md:w-48" aria-label={activeLocale === "zh" ? "返回首页" : "Back to home"}>
-          <Image src={logo.src} alt={logo.alt} fill sizes="192px" priority className="object-contain" />
+        <a href="#home" className="flex shrink-0 items-center gap-3" aria-label={activeLocale === "zh" ? "返回首页" : "Back to home"}>
+          <span className="relative h-14 w-24 md:h-16 md:w-28">
+            <Image
+              src={logo.src}
+              alt={logo.alt}
+              fill
+              sizes="112px"
+              preload
+              className="object-contain"
+            />
+          </span>
+          <span className="hidden text-base font-bold leading-tight text-slate-900 sm:block md:text-lg">
+            {companyName}
+          </span>
         </a>
 
-        <nav className="hidden items-center gap-7 lg:flex" aria-label={activeLocale === "zh" ? "主导航" : "Main navigation"}>
+        <nav className="hidden items-center gap-5 xl:gap-7 lg:flex" aria-label={activeLocale === "zh" ? "主导航" : "Main navigation"}>
           {navItems.map((item) => (
             <a
               key={`${item.label}-${item.href}`}
@@ -60,15 +75,15 @@ export function SiteHeader({
         </nav>
 
         <div className="hidden items-center gap-5 lg:flex">
-          <a
-            href={`tel:${phone}`}
+          <PhoneCallLink
+            phone={phone}
             className="inline-flex items-center gap-2 text-sm font-bold text-[#0A5BA8]"
           >
             <span className="grid size-7 place-items-center rounded-full bg-[#0A5BA8] text-white">
               <Phone className="size-4" aria-hidden="true" />
             </span>
             {phone}
-          </a>
+          </PhoneCallLink>
           <div className="flex items-center gap-3 text-sm font-semibold text-slate-700" aria-label={activeLocale === "zh" ? "语言切换" : "Language switcher"}>
             <Languages className="size-4 text-[#0A5BA8]" aria-hidden="true" />
             {languages.map((language, index) => (
@@ -120,13 +135,14 @@ export function SiteHeader({
               {item.label}
             </a>
           ))}
-          <a
-            href={`tel:${phone}`}
+          <PhoneCallLink
+            phone={phone}
+            onDial={() => setIsOpen(false)}
             className="mt-2 inline-flex items-center gap-2 rounded-lg px-3 py-3 font-bold text-[#0A5BA8]"
           >
             <Phone className="size-4" aria-hidden="true" />
             {phone}
-          </a>
+          </PhoneCallLink>
           <div className="mt-2 flex items-center gap-2 px-3" aria-label={activeLocale === "zh" ? "语言切换" : "Language switcher"}>
             {languages.map((language) => (
               <Button

@@ -1,0 +1,12 @@
+[    2045ms] [LOG] Bundle `MapControl` is loaded @ https://r.bing.com/rp/x8s3eummIdTEsfOQ-eNiQF0NTWM.br.js:1
+[    2048ms] [LOG] Bundle `AppShell` is loaded @ https://r.bing.com/rp/3W2WtLCG0ic5qutPPIsDvW70zWc.br.js:0
+[    2437ms] [LOG] Bundle `LocalSearch` is loaded @ https://r.bing.com/rp/tjlRPKWABUK_IQNgANqW19MlGk8.br.js:0
+[    4148ms] [WARNING] Expected value to be of type number, but found null instead. @ blob:https://www.bing.com/9c33083a-4d6d-400b-bee7-5511c6fcf8ab:0
+[    4148ms] [WARNING] Expected value to be of type number, but found null instead. @ blob:https://www.bing.com/9c33083a-4d6d-400b-bee7-5511c6fcf8ab:0
+[    4150ms] [WARNING] Expected value to be of type number, but found null instead. @ blob:https://www.bing.com/9c33083a-4d6d-400b-bee7-5511c6fcf8ab:0
+[    4150ms] [WARNING] Expected value to be of type number, but found null instead. @ blob:https://www.bing.com/9c33083a-4d6d-400b-bee7-5511c6fcf8ab:0
+[    4151ms] [WARNING] Expected value to be of type number, but found null instead. @ blob:https://www.bing.com/9c33083a-4d6d-400b-bee7-5511c6fcf8ab:0
+[    4153ms] [WARNING] Expected value to be of type number, but found null instead. @ blob:https://www.bing.com/9c33083a-4d6d-400b-bee7-5511c6fcf8ab:0
+[    5151ms] [WARNING] Expected value to be of type number, but found null instead. @ blob:https://www.bing.com/9c33083a-4d6d-400b-bee7-5511c6fcf8ab:0
+[    5151ms] [WARNING] Expected value to be of type number, but found null instead. @ blob:https://www.bing.com/9c33083a-4d6d-400b-bee7-5511c6fcf8ab:0
+[    5154ms] [WARNING] Expected value to be of type number, but found null instead. @ blob:https://www.bing.com/9c33083a-4d6d-400b-bee7-5511c6fcf8ab:0

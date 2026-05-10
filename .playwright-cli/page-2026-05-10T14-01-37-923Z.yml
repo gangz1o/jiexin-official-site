@@ -1,0 +1,351 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "返回首页" [ref=e4] [cursor=pointer]:
+        - /url: "#home"
+        - img "Jiexin Technology logo" [ref=e6]
+        - generic [ref=e7]: 杰鑫机电有限公司
+      - navigation "主导航" [ref=e8]:
+        - link "首页" [ref=e9] [cursor=pointer]:
+          - /url: "#home"
+        - link "关于我们" [ref=e10] [cursor=pointer]:
+          - /url: "#about"
+        - link "产品中心" [ref=e11] [cursor=pointer]:
+          - /url: "#products"
+        - link "解决方案" [ref=e12] [cursor=pointer]:
+          - /url: "#scope"
+        - link "服务支持" [ref=e13] [cursor=pointer]:
+          - /url: "#contact"
+        - link "新闻资讯" [ref=e14] [cursor=pointer]:
+          - /url: "#partners"
+        - link "联系我们" [ref=e15] [cursor=pointer]:
+          - /url: "#contact"
+      - generic [ref=e16]:
+        - link "18605530725" [ref=e17] [cursor=pointer]:
+          - /url: tel:18605530725
+          - img [ref=e19]
+          - text: "18605530725"
+        - generic "语言切换" [ref=e21]:
+          - img [ref=e22]
+          - generic [ref=e26]:
+            - button "中文" [pressed] [ref=e27]
+            - generic [ref=e28]: "|"
+          - button "EN" [ref=e30]
+  - main [ref=e31]:
+    - region "杰鑫机电科技有限公司" [ref=e32]:
+      - img "Atlas Copco Group headquarters campus" [ref=e34]
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - paragraph [ref=e38]: ENERGY-SAVING GAS
+          - heading "杰鑫机电科技有限公司" [level=1] [ref=e39]
+          - paragraph [ref=e40]: 致力于节能机电设备与系统解决方案
+        - list [ref=e41]:
+          - listitem [ref=e42]:
+            - img [ref=e44]
+            - generic [ref=e46]: 高效节能
+          - listitem [ref=e47]:
+            - img [ref=e49]
+            - generic [ref=e52]: 稳定可靠
+          - listitem [ref=e53]:
+            - img [ref=e55]
+            - generic [ref=e58]: 专业服务
+    - region "关于我们" [ref=e59]:
+      - generic [ref=e60]:
+        - generic [ref=e61]:
+          - generic [ref=e63]:
+            - heading "关于我们" [level=2] [ref=e64]
+            - paragraph [ref=e65]: ABOUT US
+          - paragraph [ref=e66]: 杰鑫机电科技有限公司自 2010 年起深耕节能机电与压缩空气系统领域，围绕空压站规划、设备选型、安装调试、维护保养与节能改造提供一站式服务。我们坚持以可靠设备、规范施工和及时响应为客户降低运行风险，持续提升用气系统的稳定性与能效表现。
+          - generic [ref=e67]:
+            - generic [ref=e68]:
+              - term [ref=e69]:
+                - img [ref=e71]
+                - text: 手机
+              - definition [ref=e73]: "18605530725"
+            - generic [ref=e74]:
+              - term [ref=e75]:
+                - img [ref=e77]
+                - text: 邮箱
+              - definition [ref=e80]: 18605530725@126.com
+            - generic [ref=e81]:
+              - term [ref=e82]:
+                - img [ref=e84]
+                - text: 地址
+              - definition [ref=e87]: 安徽省芜湖市智慧空压站服务中心（南翔万商店）
+          - link "了解更多" [ref=e88] [cursor=pointer]:
+            - /url: "#scope"
+            - text: 了解更多
+            - img
+        - generic [ref=e90]:
+          - img "Jiexin Technology office building" [ref=e91]
+          - button "播放企业介绍视频" [ref=e92]:
+            - img [ref=e93]
+    - region "经营范围" [ref=e95]:
+      - generic [ref=e96]:
+        - generic [ref=e98]:
+          - generic [ref=e99]:
+            - heading "经营范围" [level=2] [ref=e100]
+            - paragraph [ref=e101]: BUSINESS SCOPE
+          - paragraph [ref=e102]: 螺杆空压机、冷干机、吸干机、超级铝合金节能管道、空压站房设计布置安装、冷水机、储气罐投资、制氮制氢储存等。
+        - generic [ref=e103]:
+          - generic [ref=e107]:
+            - img [ref=e109]
+            - generic [ref=e115]:
+              - heading "设计" [level=3] [ref=e116]
+              - paragraph [ref=e117]: DESIGN
+          - generic [ref=e121]:
+            - img [ref=e123]
+            - generic [ref=e125]:
+              - heading "安装" [level=3] [ref=e126]
+              - paragraph [ref=e127]: INSTALL
+          - generic [ref=e131]:
+            - img [ref=e133]
+            - generic [ref=e137]:
+              - heading "调试" [level=3] [ref=e138]
+              - paragraph [ref=e139]: COMMISSION
+          - generic [ref=e143]:
+            - img [ref=e145]
+            - generic [ref=e148]:
+              - heading "维护" [level=3] [ref=e149]
+              - paragraph [ref=e150]: MAINTAIN
+    - region "产品中心" [ref=e151]:
+      - generic [ref=e152]:
+        - generic [ref=e155]:
+          - heading "产品中心" [level=2] [ref=e156]
+          - paragraph [ref=e157]: PRODUCTS
+        - generic [ref=e158]:
+          - generic [ref=e162]:
+            - img "Screw air compressor equipment photo" [ref=e164]
+            - generic [ref=e165]:
+              - img [ref=e167]
+              - heading "螺杆空压机" [level=3] [ref=e169]
+              - paragraph [ref=e170]: 适用于连续供气场景，兼顾能效、排气稳定性与低维护成本，可按工况配置变频、永磁等节能方案。
+          - generic [ref=e174]:
+            - img "Refrigerated air dryer equipment photo" [ref=e176]
+            - generic [ref=e177]:
+              - img [ref=e179]
+              - heading "冷干机" [level=3] [ref=e182]
+              - paragraph [ref=e183]: 通过制冷降温去除压缩空气水分，降低管路积水、阀件锈蚀与终端设备故障风险。
+          - generic [ref=e187]:
+            - img "Adsorption air dryer equipment photo" [ref=e189]
+            - generic [ref=e190]:
+              - img [ref=e192]
+              - heading "吸干机" [level=3] [ref=e196]
+              - paragraph [ref=e197]: 面向低露点和高品质用气需求，适配精密制造、喷涂、电子等对干燥度要求更高的场景。
+          - generic [ref=e201]:
+            - img "Compressed air receiver tank equipment photo" [ref=e203]
+            - generic [ref=e204]:
+              - img [ref=e206]
+              - heading "储气罐" [level=3] [ref=e210]
+              - paragraph [ref=e211]: 用于稳压、缓冲与削峰，配合空压机组提升系统稳定性，保障持续可靠供气。
+        - link "查看全部产品" [ref=e213] [cursor=pointer]:
+          - /url: "#contact"
+          - text: 查看全部产品
+          - img
+    - region "合作伙伴" [ref=e214]:
+      - generic [ref=e218]:
+        - heading "合作伙伴" [level=2] [ref=e219]
+        - paragraph [ref=e220]: OUR PARTNERS
+      - generic [ref=e221]:
+        - generic "合作伙伴滚动列表" [ref=e222]:
+          - generic [ref=e223]:
+            - img "Atlas Copco partner logo" [ref=e225]
+            - img "Deman partner logo" [ref=e227]
+            - img "Gardner Denver partner logo" [ref=e229]
+            - generic [ref=e233]:
+              - paragraph [ref=e234]: KAESER
+              - paragraph [ref=e235]: Compressors
+            - generic [ref=e239]:
+              - paragraph [ref=e240]: BOGE
+              - paragraph [ref=e241]: Compressed Air
+            - generic [ref=e245]:
+              - paragraph [ref=e246]: ELGi
+              - paragraph [ref=e247]: Equipment
+            - generic [ref=e251]:
+              - paragraph [ref=e252]: 复盛
+              - paragraph [ref=e253]: FUSHENG
+            - generic [ref=e257]:
+              - paragraph [ref=e258]: KOBELCO
+              - paragraph [ref=e259]: Systems
+            - generic [ref=e263]:
+              - paragraph [ref=e264]: BEKO
+              - paragraph [ref=e265]: Technologies
+            - generic [ref=e269]:
+              - paragraph [ref=e270]: ANEST IWATA
+              - paragraph [ref=e271]: Air Engineering
+            - generic [ref=e278]:
+              - paragraph [ref=e279]: KAESER
+              - paragraph [ref=e280]: Compressors
+            - generic [ref=e284]:
+              - paragraph [ref=e285]: BOGE
+              - paragraph [ref=e286]: Compressed Air
+            - generic [ref=e290]:
+              - paragraph [ref=e291]: ELGi
+              - paragraph [ref=e292]: Equipment
+            - generic [ref=e296]:
+              - paragraph [ref=e297]: 复盛
+              - paragraph [ref=e298]: FUSHENG
+            - generic [ref=e302]:
+              - paragraph [ref=e303]: KOBELCO
+              - paragraph [ref=e304]: Systems
+            - generic [ref=e308]:
+              - paragraph [ref=e309]: BEKO
+              - paragraph [ref=e310]: Technologies
+            - generic [ref=e314]:
+              - paragraph [ref=e315]: ANEST IWATA
+              - paragraph [ref=e316]: Air Engineering
+        - generic "合作伙伴滚动列表" [ref=e317]:
+          - generic [ref=e318]:
+            - img "LIUTECH partner logo" [ref=e320]
+            - img "Ingersoll Rand partner logo" [ref=e322]
+            - img "SULLAIR partner logo" [ref=e324]
+            - generic [ref=e328]:
+              - paragraph [ref=e329]: Quincy
+              - paragraph [ref=e330]: Compressor
+            - generic [ref=e334]:
+              - paragraph [ref=e335]: CompAir
+              - paragraph [ref=e336]: Air Systems
+            - generic [ref=e340]:
+              - paragraph [ref=e341]: 开山
+              - paragraph [ref=e342]: KAISHAN
+            - generic [ref=e346]:
+              - paragraph [ref=e347]: HITACHI
+              - paragraph [ref=e348]: Industrial
+            - generic [ref=e352]:
+              - paragraph [ref=e353]: CP
+              - paragraph [ref=e354]: Chicago Pneumatic
+            - generic [ref=e358]:
+              - paragraph [ref=e359]: Hankison
+              - paragraph [ref=e360]: Filtration
+            - generic [ref=e364]:
+              - paragraph [ref=e365]: SCR
+              - paragraph [ref=e366]: Compressor
+            - generic [ref=e373]:
+              - paragraph [ref=e374]: Quincy
+              - paragraph [ref=e375]: Compressor
+            - generic [ref=e379]:
+              - paragraph [ref=e380]: CompAir
+              - paragraph [ref=e381]: Air Systems
+            - generic [ref=e385]:
+              - paragraph [ref=e386]: 开山
+              - paragraph [ref=e387]: KAISHAN
+            - generic [ref=e391]:
+              - paragraph [ref=e392]: HITACHI
+              - paragraph [ref=e393]: Industrial
+            - generic [ref=e397]:
+              - paragraph [ref=e398]: CP
+              - paragraph [ref=e399]: Chicago Pneumatic
+            - generic [ref=e403]:
+              - paragraph [ref=e404]: Hankison
+              - paragraph [ref=e405]: Filtration
+            - generic [ref=e409]:
+              - paragraph [ref=e410]: SCR
+              - paragraph [ref=e411]: Compressor
+    - region "联系我们" [ref=e412]:
+      - generic [ref=e413]:
+        - generic [ref=e416]:
+          - heading "联系我们" [level=2] [ref=e417]
+          - paragraph [ref=e418]: CONTACT US
+        - generic [ref=e419]:
+          - generic [ref=e420]:
+            - generic [ref=e422]:
+              - generic [ref=e423]:
+                - term [ref=e424]:
+                  - img [ref=e425]
+                  - generic [ref=e427]: 手机
+                - definition [ref=e428]:
+                  - paragraph [ref=e429]: 手机
+                  - link "18605530725" [ref=e430] [cursor=pointer]:
+                    - /url: tel:18605530725
+              - generic [ref=e431]:
+                - term [ref=e432]:
+                  - img [ref=e433]
+                  - generic [ref=e436]: 邮箱
+                - definition [ref=e437]:
+                  - paragraph [ref=e438]: 邮箱
+                  - paragraph [ref=e439]: 18605530725@126.com
+              - generic [ref=e440]:
+                - term [ref=e441]:
+                  - img [ref=e442]
+                  - generic [ref=e445]: 地址
+                - definition [ref=e446]:
+                  - paragraph [ref=e447]: 地址
+                  - paragraph [ref=e448]: 安徽省芜湖市智慧空压站服务中心（南翔万商店）
+            - img "Jiexin Technology WeChat QR code" [ref=e451]
+          - link "Jiexin Technology service center location map" [ref=e453] [cursor=pointer]:
+            - /url: https://surl.amap.com/gPqBRaq9eSv
+            - img "Jiexin Technology service center location preview" [ref=e454]
+            - generic [ref=e455]: 打开地图
+  - contentinfo [ref=e456]:
+    - generic [ref=e457]:
+      - generic [ref=e458]:
+        - link "返回首页" [ref=e459] [cursor=pointer]:
+          - /url: "#home"
+          - img "Jiexin Technology logo" [ref=e461]
+          - generic [ref=e462]: 杰鑫机电有限公司
+        - paragraph [ref=e463]: 自 2010 年起专注压缩空气系统与节能机电服务，提供可靠设备、规范施工与及时响应。
+      - navigation "快速导航" [ref=e464]:
+        - heading "快速导航" [level=2] [ref=e465]
+        - list [ref=e466]:
+          - listitem [ref=e467]:
+            - link "首页" [ref=e468] [cursor=pointer]:
+              - /url: "#home"
+          - listitem [ref=e469]:
+            - link "关于我们" [ref=e470] [cursor=pointer]:
+              - /url: "#about"
+          - listitem [ref=e471]:
+            - link "产品中心" [ref=e472] [cursor=pointer]:
+              - /url: "#products"
+          - listitem [ref=e473]:
+            - link "解决方案" [ref=e474] [cursor=pointer]:
+              - /url: "#scope"
+          - listitem [ref=e475]:
+            - link "服务支持" [ref=e476] [cursor=pointer]:
+              - /url: "#contact"
+          - listitem [ref=e477]:
+            - link "新闻资讯" [ref=e478] [cursor=pointer]:
+              - /url: "#partners"
+          - listitem [ref=e479]:
+            - link "联系我们" [ref=e480] [cursor=pointer]:
+              - /url: "#contact"
+      - navigation "解决方案" [ref=e481]:
+        - heading "解决方案" [level=2] [ref=e482]
+        - list [ref=e483]:
+          - listitem [ref=e484]:
+            - link "空压站解决方案" [ref=e485] [cursor=pointer]:
+              - /url: "#scope"
+          - listitem [ref=e486]:
+            - link "制氮系统解决方案" [ref=e487] [cursor=pointer]:
+              - /url: "#scope"
+          - listitem [ref=e488]:
+            - link "制氢系统解决方案" [ref=e489] [cursor=pointer]:
+              - /url: "#scope"
+          - listitem [ref=e490]:
+            - link "节能改造方案" [ref=e491] [cursor=pointer]:
+              - /url: "#scope"
+          - listitem [ref=e492]:
+            - link "更多方案" [ref=e493] [cursor=pointer]:
+              - /url: "#contact"
+      - generic [ref=e494]:
+        - heading "联系我们" [level=2] [ref=e495]
+        - generic [ref=e496]:
+          - generic [ref=e497]:
+            - term [ref=e498]:
+              - img [ref=e499]
+              - text: 手机：
+            - definition [ref=e501]: "18605530725"
+          - generic [ref=e502]:
+            - term [ref=e503]:
+              - img [ref=e504]
+              - text: 邮箱：
+            - definition [ref=e507]: 18605530725@126.com
+          - generic [ref=e508]:
+            - term [ref=e509]:
+              - img [ref=e510]
+              - text: 地址：
+            - definition [ref=e513]: 安徽省芜湖市智慧空压站服务中心（南翔万商店）
+    - generic [ref=e515]: © 2010-2026 杰鑫机电科技有限公司 版权所有
+    - button "回到顶部" [ref=e516]:
+      - img
+  - button "Open Next.js Dev Tools" [ref=e522] [cursor=pointer]:
+    - img [ref=e523]

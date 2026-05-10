@@ -23,6 +23,13 @@ export type ImageAsset = {
   alt: string;
 };
 
+export type MapAsset = {
+  preview: ImageAsset;
+  alt: string;
+  openHref: string;
+  openLabel: string;
+};
+
 export type HeroAdvantage = {
   title: string;
   icon: IconName;
@@ -130,10 +137,11 @@ export type HomeContent = {
     subtitle: string;
     details: ContactItem[];
     qr: ImageAsset;
-    map: ImageAsset;
+    map: MapAsset;
   };
   footer: {
     company: {
+      name: string;
       logo: ImageAsset;
       description: string;
     };

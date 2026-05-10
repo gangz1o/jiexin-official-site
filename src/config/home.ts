@@ -20,7 +20,7 @@ export const languageOptions: LanguageOption[] = [
 ];
 
 export const brandLogo: ImageAsset = {
-  src: "/images/logo-jiexin.svg",
+  src: "/images/logo-jiexin.png",
   alt: "Jiexin Technology logo",
 };
 
@@ -40,13 +40,23 @@ const sharedAboutImage: ImageAsset = {
 };
 
 const sharedQrImage: ImageAsset = {
-  src: "/images/qr-wechat.svg",
+  src: "/images/qr-wechat-real.png",
   alt: "Jiexin Technology WeChat QR code",
 };
 
-const sharedMapImage: ImageAsset = {
-  src: "/images/map-location.svg",
-  alt: "Jiexin Technology service center map",
+const sharedMapImage = {
+  preview: {
+    src: "/images/map-location-amap-cropped.png",
+    alt: "Jiexin Technology service center location preview",
+  },
+  alt: "Jiexin Technology service center location map",
+  openHref: "https://surl.amap.com/gPqBRaq9eSv",
+  openLabel: "打开地图",
+};
+
+const sharedMapImageEn = {
+  ...sharedMapImage,
+  openLabel: "Open Map",
 };
 
 const partners: PartnerItem[] = [
@@ -246,6 +256,7 @@ export const homeContent = {
     },
     footer: {
       company: {
+        name: "杰鑫科技",
         logo: brandLogo,
         description: "自 2010 年起专注压缩空气系统与节能机电服务，提供可靠设备、规范施工与及时响应。",
       },
@@ -357,10 +368,11 @@ export const homeContent = {
       subtitle: "CONTACT US",
       details: contacts({ phoneLabel: "Phone", emailLabel: "Email", addressLabel: "Address", address: enAddress }),
       qr: sharedQrImage,
-      map: sharedMapImage,
+      map: sharedMapImageEn,
     },
     footer: {
       company: {
+        name: "Jiexin Electromechanical Technology",
         logo: brandLogo,
         description:
           "Focused on compressed air systems and energy-saving electromechanical service since 2010.",
