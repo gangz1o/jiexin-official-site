@@ -137,7 +137,6 @@ const zhNavigation: NavItem[] = [
   { label: "关于我们", href: "#about" },
   { label: "产品中心", href: "#products" },
   { label: "解决方案", href: "#scope" },
-  { label: "服务支持", href: "#contact" },
   { label: "新闻资讯", href: "#partners" },
   { label: "联系我们", href: "#contact" },
 ];
@@ -158,16 +157,16 @@ const enAddress = "Smart Air Compressor Station Service Center, Wuhu, Anhui, Chi
 export const homeContent = {
   zh: {
     meta: {
-      title: "杰鑫机电科技有限公司 | 节能机电设备与系统解决方案",
+      title: "安徽杰鑫机电科技有限公司 | 节能机电设备与系统解决方案",
       description:
-        "杰鑫机电科技有限公司专注节能机电设备研发、生产、销售与服务，提供空压站系统设计、安装、调试和维护解决方案。",
+        "安徽杰鑫机电科技有限公司专注节能机电设备研发、生产、销售与服务，提供空压站系统设计、安装、调试和维护解决方案。",
     },
     company: {
-      name: "杰鑫机电科技有限公司",
+      name: "安徽杰鑫机电科技有限公司",
       englishName: "ENERGY-SAVING GAS",
       slogan: "致力于节能机电设备与系统解决方案",
       summary:
-        "杰鑫机电科技有限公司自 2010 年起深耕节能机电与压缩空气系统领域，围绕空压站规划、设备选型、安装调试、维护保养与节能改造提供一站式服务。我们坚持以可靠设备、规范施工和及时响应为客户降低运行风险，持续提升用气系统的稳定性与能效表现。",
+        "安徽杰鑫机电科技有限公司自 2010 年起深耕节能机电与压缩空气系统领域，围绕空压站规划、设备选型、安装调试、维护保养与节能改造提供一站式服务。我们坚持以可靠设备、规范施工和及时响应为客户降低运行风险，持续提升用气系统的稳定性与能效表现。",
       phone: sharedCompany.phone,
       email: sharedCompany.email,
       address: zhAddress,
@@ -175,7 +174,7 @@ export const homeContent = {
     navigation: zhNavigation,
     hero: {
       eyebrow: "ENERGY-SAVING GAS",
-      title: "杰鑫机电科技有限公司",
+      title: "安徽杰鑫机电科技有限公司",
       subtitle: "致力于节能机电设备与系统解决方案",
       background: sharedHeroBackground,
       advantages: [
@@ -189,7 +188,7 @@ export const homeContent = {
       title: "关于我们",
       subtitle: "ABOUT US",
       body:
-        "杰鑫机电科技有限公司自 2010 年起深耕节能机电与压缩空气系统领域，围绕空压站规划、设备选型、安装调试、维护保养与节能改造提供一站式服务。我们坚持以可靠设备、规范施工和及时响应为客户降低运行风险，持续提升用气系统的稳定性与能效表现。",
+        "安徽杰鑫机电科技有限公司自 2010 年起深耕节能机电与压缩空气系统领域，围绕空压站规划、设备选型、安装调试、维护保养与节能改造提供一站式服务。我们坚持以可靠设备、规范施工和及时响应为客户降低运行风险，持续提升用气系统的稳定性与能效表现。",
       contacts: contacts({ phoneLabel: "手机", emailLabel: "邮箱", addressLabel: "地址", address: zhAddress }),
       cta: { label: "了解更多", href: "#scope" },
       image: sharedAboutImage,
@@ -197,15 +196,39 @@ export const homeContent = {
     },
     scope: {
       id: "scope",
-      title: "经营范围",
-      subtitle: "BUSINESS SCOPE",
+      title: "解决方案",
+      subtitle: "SOLUTIONS",
       description:
-        "螺杆空压机、冷干机、吸干机、超级铝合金节能管道、空压站房设计布置安装、冷水机、储气罐投资、制氮制氢储存等。",
+        "围绕压缩空气从产生、净化、储存、输送到用气端管理，提供面向工况的整站方案与长期服务。",
       items: [
-        { title: "设计", subtitle: "DESIGN", icon: "design" },
-        { title: "安装", subtitle: "INSTALL", icon: "install" },
-        { title: "调试", subtitle: "COMMISSION", icon: "commission" },
-        { title: "维护", subtitle: "MAINTAIN", icon: "maintenance" },
+        {
+          title: "空压站整站建设",
+          subtitle: "AIR STATION",
+          description: "面向新建厂房、产线扩容和老站升级，统筹空压机、储气罐、干燥过滤、管路与控制系统。",
+          image: productImages.compressor,
+          highlights: ["站房布局与设备选型", "安装调试与压力稳定", "后续巡检和维护保养"],
+        },
+        {
+          title: "空气品质与后处理",
+          subtitle: "AIR TREATMENT",
+          description: "针对含水、含油、低露点和精密用气场景，配置冷干机、吸干机、过滤器和排水系统。",
+          image: productImages.refrigeratedDryer,
+          highlights: ["降低管路积水和锈蚀", "匹配喷涂、电子、食品等用气要求", "稳定终端设备运行"],
+        },
+        {
+          title: "节能改造与管网优化",
+          subtitle: "ENERGY SAVING",
+          description: "通过压力设定、变频联控、泄漏排查和铝合金节能管道改造，降低系统长期运行成本。",
+          image: productImages.tank,
+          highlights: ["压降与泄漏治理", "管网分区和储气缓冲", "运行数据复盘和节能建议"],
+        },
+        {
+          title: "制氮制氢配套系统",
+          subtitle: "PROCESS GAS",
+          description: "围绕现场制氮、制氢和储存需求，提供压缩空气前处理、储气缓冲和安全联动配套。",
+          image: productImages.adsorptionDryer,
+          highlights: ["前处理空气品质保障", "储存与供气连续性", "适配电子、化工、热处理等工艺"],
+        },
       ] satisfies ScopeItem[],
     },
     products: {
@@ -256,7 +279,7 @@ export const homeContent = {
     },
     footer: {
       company: {
-        name: "杰鑫科技",
+        name: "安徽杰鑫机电",
         logo: brandLogo,
         description: "自 2010 年起专注压缩空气系统与节能机电服务，提供可靠设备、规范施工与及时响应。",
       },
@@ -268,7 +291,7 @@ export const homeContent = {
         { label: "更多方案", href: "#contact" },
       ]),
       contactTitle: "联系我们",
-      copyright: "© 2010-2026 杰鑫机电科技有限公司 版权所有",
+      copyright: "© 2010-2026 安徽杰鑫机电科技有限公司 版权所有",
       backToTopLabel: "回到顶部",
     },
   },
@@ -313,15 +336,39 @@ export const homeContent = {
     },
     scope: {
       id: "scope",
-      title: "Business Scope",
-      subtitle: "BUSINESS SCOPE",
+      title: "Solutions",
+      subtitle: "SOLUTIONS",
       description:
-        "Screw air compressors, refrigerated dryers, adsorption dryers, energy-saving aluminum piping, air compressor station layout and installation, chillers, air receiver tanks, nitrogen generation, hydrogen generation, and related storage systems.",
+        "We build practical compressed-air solutions across generation, treatment, storage, distribution, and point-of-use management.",
       items: [
-        { title: "Design", subtitle: "DESIGN", icon: "design" },
-        { title: "Install", subtitle: "INSTALL", icon: "install" },
-        { title: "Commission", subtitle: "COMMISSION", icon: "commission" },
-        { title: "Maintain", subtitle: "MAINTAIN", icon: "maintenance" },
+        {
+          title: "Air Station Delivery",
+          subtitle: "AIR STATION",
+          description: "For new facilities, capacity expansion, and station upgrades, we coordinate compressors, receivers, air treatment, piping, and controls.",
+          image: productImages.compressor,
+          highlights: ["Station layout and equipment selection", "Installation, commissioning, and pressure stability", "Ongoing inspection and maintenance"],
+        },
+        {
+          title: "Air Quality & Treatment",
+          subtitle: "AIR TREATMENT",
+          description: "For moisture, oil, low-dew-point, and precision-air requirements, we configure dryers, filters, drains, and treatment systems.",
+          image: productImages.refrigeratedDryer,
+          highlights: ["Reduce condensate and corrosion", "Match coating, electronics, food, and precision processes", "Protect downstream equipment uptime"],
+        },
+        {
+          title: "Energy Retrofit & Piping",
+          subtitle: "ENERGY SAVING",
+          description: "We reduce long-term operating cost through pressure optimization, inverter control, leakage checks, and aluminum piping upgrades.",
+          image: productImages.tank,
+          highlights: ["Pressure-drop and leakage control", "Piping zones and receiver buffering", "Operation review and savings recommendations"],
+        },
+        {
+          title: "Nitrogen & Hydrogen Support",
+          subtitle: "PROCESS GAS",
+          description: "For on-site nitrogen, hydrogen, and storage needs, we provide air pretreatment, buffer storage, and safety-linked support systems.",
+          image: productImages.adsorptionDryer,
+          highlights: ["Pretreatment air-quality assurance", "Storage and supply continuity", "Fit for electronics, chemical, and heat-treatment processes"],
+        },
       ] satisfies ScopeItem[],
     },
     products: {

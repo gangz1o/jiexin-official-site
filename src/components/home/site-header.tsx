@@ -28,6 +28,8 @@ export function SiteHeader({
 }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [activeHref, setActiveHref] = useState(navItems[0]?.href ?? "#home");
+  const activeNavIndex = navItems.findLastIndex((item) => item.href === activeHref);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 18);
@@ -35,6 +37,35 @@ export function SiteHeader({
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    const sectionIds = navItems
+      .map((item) => item.href)
+      .filter((href) => href.startsWith("#"))
+      .map((href) => href.slice(1));
+
+    const handleScroll = () => {
+      const viewportProbe = Math.min(window.innerHeight * 0.45, 420);
+      const currentId =
+        sectionIds.find((id) => {
+          const section = document.getElementById(id);
+          if (!section) {
+            return false;
+          }
+
+          const rect = section.getBoundingClientRect();
+          return rect.top <= viewportProbe && rect.bottom > viewportProbe;
+        }) ?? sectionIds[0];
+
+      if (currentId) {
+        setActiveHref(`#${currentId}`);
+      }
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [navItems]);
 
   return (
     <header
@@ -45,9 +76,9 @@ export function SiteHeader({
           : "border-white/40 bg-white/90 backdrop-blur-md",
       )}
     >
-      <div className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="grid h-20 w-full grid-cols-[1fr_auto] items-center px-4 sm:px-6 lg:grid-cols-[minmax(260px,1fr)_auto_minmax(260px,1fr)] lg:px-12 xl:px-16">
         <a href="#home" className="flex shrink-0 items-center gap-3" aria-label={activeLocale === "zh" ? "返回首页" : "Back to home"}>
-          <span className="relative h-14 w-24 md:h-16 md:w-28">
+          <span className="relative h-11 w-20 md:h-[52px] md:w-[90px]">
             <Image
               src={logo.src}
               alt={logo.alt}
@@ -57,24 +88,30 @@ export function SiteHeader({
               className="object-contain"
             />
           </span>
-          <span className="hidden text-base font-bold leading-tight text-slate-900 sm:block md:text-lg">
+          <span className="hidden text-base font-semibold leading-tight text-slate-900 sm:block md:text-2xl md:font-bold md:text-slate-800">
             {companyName}
           </span>
         </a>
 
-        <nav className="hidden items-center gap-5 xl:gap-7 lg:flex" aria-label={activeLocale === "zh" ? "主导航" : "Main navigation"}>
-          {navItems.map((item) => (
+        <nav className="hidden items-center justify-self-center gap-5 xl:gap-7 lg:flex" aria-label={activeLocale === "zh" ? "主导航" : "Main navigation"}>
+          {navItems.map((item, index) => (
             <a
               key={`${item.label}-${item.href}`}
               href={item.href}
-              className="text-sm font-semibold text-slate-700 transition-colors hover:text-[#0A5BA8]"
+              aria-current={activeNavIndex === index ? "page" : undefined}
+              className={cn(
+                "relative py-2 text-sm font-semibold transition-colors after:absolute after:inset-x-0 after:-bottom-1 after:h-0.5 after:origin-center after:scale-x-0 after:rounded-full after:bg-[#0A5BA8] after:transition-transform hover:text-[#0A5BA8]",
+                activeNavIndex === index
+                  ? "text-[#0A5BA8] after:scale-x-100"
+                  : "text-slate-700",
+              )}
             >
               {item.label}
             </a>
           ))}
         </nav>
 
-        <div className="hidden items-center gap-5 lg:flex">
+        <div className="hidden items-center justify-self-end gap-5 lg:flex">
           <PhoneCallLink
             phone={phone}
             className="inline-flex items-center gap-2 text-sm font-bold text-[#0A5BA8]"
@@ -109,7 +146,7 @@ export function SiteHeader({
           type="button"
           size="icon-lg"
           variant="ghost"
-          className="lg:hidden"
+          className="justify-self-end lg:hidden"
           aria-label={isOpen ? (activeLocale === "zh" ? "关闭导航菜单" : "Close menu") : activeLocale === "zh" ? "打开导航菜单" : "Open menu"}
           aria-expanded={isOpen}
           onClick={() => setIsOpen((value) => !value)}
@@ -125,11 +162,17 @@ export function SiteHeader({
         )}
       >
         <nav className="mx-auto grid max-w-7xl gap-1 px-4 py-4" aria-label={activeLocale === "zh" ? "移动端导航" : "Mobile navigation"}>
-          {navItems.map((item) => (
+          {navItems.map((item, index) => (
             <a
               key={`${item.label}-${item.href}`}
               href={item.href}
-              className="rounded-lg px-3 py-3 text-base font-semibold text-slate-700 hover:bg-slate-100 hover:text-[#0A5BA8]"
+              aria-current={activeNavIndex === index ? "page" : undefined}
+              className={cn(
+                "rounded-lg px-3 py-3 text-base font-semibold transition-colors hover:bg-slate-100 hover:text-[#0A5BA8]",
+                activeNavIndex === index
+                  ? "bg-[#E8F2FB] text-[#0A5BA8]"
+                  : "text-slate-700",
+              )}
               onClick={() => setIsOpen(false)}
             >
               {item.label}

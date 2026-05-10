@@ -44,7 +44,9 @@ export type ContactItem = {
 export type ScopeItem = {
   title: string;
   subtitle: string;
-  icon: Extract<IconName, "design" | "install" | "commission" | "maintenance">;
+  description: string;
+  image: ImageAsset;
+  highlights: string[];
 };
 
 export type ProductItem = {

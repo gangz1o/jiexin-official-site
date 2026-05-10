@@ -51,8 +51,8 @@ export function HomePage({
       <main>
         <HeroSection {...hero} />
         <AboutSection {...about} />
-        <ScopeSection {...scope} />
         <ProductsSection {...products} />
+        <ScopeSection {...scope} />
         <PartnersSection {...partners} />
         <ContactSection {...contact} />
       </main>
